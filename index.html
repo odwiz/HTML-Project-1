@@ -4,22 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>portfolio web page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
   </head>
   <body>
-    <!-Navigation Bar->
-    <nav>
-      <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#work">Work</a></li>
-        <li><a href="#resume">Resume</a></li>
-        <li><a href="#contact">Contact</a></li>   
-    </nav>
+    <header class="header">
+      <a href="#home" class="logo">WDM</a>
+      <!-Navigation Bar->
+      <nav class="nav-links">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
 
-
-<!-- Home Section -->
-    <section id="home">
-       <img src="https://imgs.search.brave.com/twV4wKd8MeVKPgJe--HKMcabe7LVI9VGSP7Mdru1qA8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJjYXZlLmNv/bS93cC93cDgxOTkw/NDkuanBn" alt="Software Engineering">
-    </section>
+      <i class="fa-solid fa-bars"></i>
+    </header>
 
     <!-- About Session -->
     <section id="about">
@@ -33,7 +38,7 @@
     </section>
 
     <!-- Work Session -->
-    <section id="Work">
+    <section id="work">
       <h2>My Work</h2>
 
       <div>
@@ -74,26 +79,30 @@
     <section id="contact">
       <h2>Contact Me</h2>
 
-      </form>
-
       <form action="#" method="post">
         <label for="name">Name:</label><br />
-        <input type="text" name="name" /><br />
+        <input type="text" name="name" placeholder="full name" /><br />
 
         <label for="email">Email:</label><br />
-        <input type="email" name="email" /><br />
+        <input type="email" name="email" placeholder="email address" /><br />
 
         <label for="subject">Subject:</label><br />
-        <input type="text" name="subject" /><br />
+        <input type="text" name="subject" placeholder="subject" /><br />
 
         <label for="message">Message:</label><br />
-        <textarea name="message" rows="5" cols="30"></textarea><br />
+        <textarea
+          name="message"
+          rows="5"
+          cols="30"
+          placeholder="message"
+        ></textarea
+        ><br />
 
         <input type="submit" value="Send Message" />
       </form>
     </section>
     <footer>
-        <p>&copy; 2026 My Portfolio.</p>
+      <p>&copy; 2026 My Portfolio.</p>
     </footer>
   </body>
 </html>
